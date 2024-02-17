@@ -1,1 +1,44 @@
 #include <BookManager.h>
+
+BookManager::BookManager(std::string _path)
+{
+    //lectura de .json con todos los libros que existen
+      std::ifstream file("books.json");
+
+    if (!file.is_open()) {
+        std::cerr << "Error opening file" << std::endl;
+    }
+    else
+    {
+        Json::Value root;
+    Json::Reader reader;
+
+    if (!reader.parse(file, root)) {
+        std::cerr << "Error parsing JSON" << std::endl;
+        file.close();
+    }
+    else
+    {
+        file.close();
+
+    // Assuming the JSON is an array of objects
+    if (root.isArray()) {
+        for (const auto& bookJson : root) {
+            //Rellenamos los valores de los libros
+            /*Book book;
+            book.serialnumber = bookJson["serialnumber"].asInt();
+            book.available = bookJson["available"].asBool();
+            book.title = bookJson["title"].asString();
+            book.author = bookJson["author"].asString();
+            book.idCliente = bookJson["idCliente"].asInt();
+            */
+        }
+    } else {
+        std::cerr << "Invalid JSON format (expecting an array)" << std::endl;
+        return 1;
+    }
+    }
+    
+    }
+    
+};
