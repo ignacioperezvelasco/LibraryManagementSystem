@@ -25,20 +25,26 @@ BookManager::BookManager(std::string _path)
     if (root.isArray()) {
         for (const auto& bookJson : root) {
             //Rellenamos los valores de los libros
-            /*Book book;
-            book.serialnumber = bookJson["serialnumber"].asInt();
-            book.available = bookJson["available"].asBool();
-            book.title = bookJson["title"].asString();
-            book.author = bookJson["author"].asString();
-            book.idCliente = bookJson["idCliente"].asInt();
-            */
+            mBooks.insert(std::make_pair(bookJson["serialnumber"].asInt(),
+            Book(bookJson["serialnumber"].asInt(),
+            bookJson["available"].asBool(),
+            bookJson["author"].asString(),
+            bookJson["title"].asString(),
+            bookJson["idCliente"].asInt()
+            )));
         }
-    } else {
+    } 
+    else 
+    {
         std::cerr << "Invalid JSON format (expecting an array)" << std::endl;
-        return 1;
     }
     }
     
     }
     
+};
+
+Book BookManager::GetBook(int _sn)
+{
+    return mBooks[_sn];
 };

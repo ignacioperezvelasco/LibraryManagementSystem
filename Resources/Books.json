@@ -1,0 +1,73 @@
+[
+    {
+      "serialnumber": 1,
+      "available": true,
+      "title": "The Catcher in the Rye",
+      "author": "J.D. Salinger",
+      "idCliente": 101
+    },
+    {
+      "serialnumber": 2,
+      "available": false,
+      "title": "To Kill a Mockingbird",
+      "author": "Harper Lee",
+      "idCliente": 0
+    },
+    {
+      "serialnumber": 3,
+      "available": true,
+      "title": "1984",
+      "author": "George Orwell",
+      "idCliente": 103
+    },
+    {
+      "serialnumber": 4,
+      "available": true,
+      "title": "Pride and Prejudice",
+      "author": "Jane Austen",
+      "idCliente": 104
+    },
+    {
+      "serialnumber": 5,
+      "available": false,
+      "title": "The Great Gatsby",
+      "author": "F. Scott Fitzgerald",
+      "idCliente": 0
+    },
+    {
+      "serialnumber": 6,
+      "available": true,
+      "title": "The Hobbit",
+      "author": "J.R.R. Tolkien",
+      "idCliente": 106
+    },
+    {
+      "serialnumber": 7,
+      "available": false,
+      "title": "Harry Potter and the Sorcerer's Stone",
+      "author": "J.K. Rowling",
+      "idCliente": 0
+    },
+    {
+      "serialnumber": 8,
+      "available": true,
+      "title": "The Lord of the Rings",
+      "author": "J.R.R. Tolkien",
+      "idCliente": 108
+    },
+    {
+      "serialnumber": 9,
+      "available": true,
+      "title": "Animal Farm",
+      "author": "George Orwell",
+      "idCliente": 109
+    },
+    {
+      "serialnumber": 10,
+      "available": false,
+      "title": "The Chronicles of Narnia",
+      "author": "C.S. Lewis",
+      "idCliente": 0
+    }
+  ]
+  

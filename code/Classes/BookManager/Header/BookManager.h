@@ -2,12 +2,14 @@
 #include <iostream>
 #include <fstream>
 #include <json/json.h> 
-#include <vector>
+#include <map>
 class BookManager
 {
     public:
     BookManager(std::string _path);
+    Book GetBook(int _sn);    
     private:
-    std::vector<Book> books;
+    std::map<int,Book> mBooks;
+
     
 };
