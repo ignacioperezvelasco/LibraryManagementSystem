@@ -9,7 +9,5 @@ class BookManager
     BookManager(std::string _path);
     Book GetBook(int _sn);    
     private:
-    std::map<int,Book> mBooks;
-
-    
+    std::map<int,Book> mBooks;    
 };

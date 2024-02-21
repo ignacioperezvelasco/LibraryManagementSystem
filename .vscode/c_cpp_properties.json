@@ -4,7 +4,8 @@
         "name": "Linux",
         "includePath": [
           "${workspaceFolder}/**",
-          "/usr/include/jsoncpp"  
+          "/usr/include/jsoncpp",
+          "/home/ignacio/Proyectos/LibraryManagementSystem/code/Classes"  
         ],
         "defines": [],
         "compilerPath": "/usr/bin/gcc /usr/lib/gcc /usr/share/gcc /usr/share/man/man1/gcc.1.gz  ",
