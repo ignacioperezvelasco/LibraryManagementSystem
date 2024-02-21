@@ -1,3 +1,0 @@
-/home/ignacio/Proyectos/LibraryManagementSystem/build/CMakeFiles/LibraryManagementSystem.dir
-/home/ignacio/Proyectos/LibraryManagementSystem/build/CMakeFiles/edit_cache.dir
-/home/ignacio/Proyectos/LibraryManagementSystem/build/CMakeFiles/rebuild_cache.dir
