@@ -1,4 +1,5 @@
 #include <string>
+
 enum StaffCategory
 {
     LIBRARIAN,CLENING,AUXILIAR,DIRECTOR

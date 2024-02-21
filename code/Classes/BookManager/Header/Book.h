@@ -9,7 +9,8 @@
     std::string title;
 
     public:
-    explicit Book(int _sn, bool _aviable, std::string _author, std::string _title,int _idClient);
+    Book(){};
+    Book(int _sn, bool _aviable, std::string _author, std::string _title,int _idClient);
     bool GetIsAviable();
     int GetSN();
     int GetIdClient();

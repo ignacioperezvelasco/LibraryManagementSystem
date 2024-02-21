@@ -1,12 +1,12 @@
-#include <BookManager.h>
+#include "../Header/BookManager.h"
 
 BookManager::BookManager(std::string _path)
 {
     //lectura de .json con todos los libros que existen
-      std::ifstream file("books.json");
+      std::ifstream file(_path);
 
     if (!file.is_open()) {
-        std::cerr << "Error opening file" << std::endl;
+        std::cerr << "Error opening file :(" << std::endl;
     }
     else
     {

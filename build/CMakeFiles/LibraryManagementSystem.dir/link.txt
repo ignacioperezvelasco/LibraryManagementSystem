@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/LibraryManagementSystem.dir/code/main.cpp.o CMakeFiles/LibraryManagementSystem.dir/code/Classes/BookManager/Cpp/BookManager.cpp.o CMakeFiles/LibraryManagementSystem.dir/code/Classes/BookManager/Cpp/Book.cpp.o -o LibraryManagementSystem  -ljsoncpp 
