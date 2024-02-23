@@ -1,5 +1,8 @@
 cmake_minimum_required(VERSION 3.10)
 
+set(CMAKE_BUILD_TYPE Debug)
+
+
 project(LibraryManagementSystem)
 
 set(CMAKE_CXX_STANDARD 17)
@@ -9,11 +12,15 @@ set(SOURCES
     code/main.cpp
     code/Classes/BookManager/Cpp/BookManager.cpp
     code/Classes/BookManager/Cpp/Book.cpp
+    code/Classes/StaffManager/Cpp/Staff.cpp
+    code/Classes/StaffManager/Cpp/StaffManager.cpp
     # Agrega otros archivos fuente según sea necesario
 )
 
 set(HEADERS
     code/Classes/BookManager/Header/BookManager.h
+    code/Classes/BookManager/Header/Book.h
+    code/Classes/StaffManager/Header/StaffManager.h
     # Agrega otros archivos de encabezado según sea necesario
 )
 

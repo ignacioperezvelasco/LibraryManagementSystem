@@ -12,6 +12,7 @@ class Staff
     int numTurn;
 
     public:
+    Staff();
     Staff(int _staffCategory, int _id, std::string _name, int _turn);
     StaffCategory GetCategory();
     int GetId();

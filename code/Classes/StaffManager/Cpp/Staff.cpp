@@ -1,4 +1,5 @@
-#include <Staff.h>
+#include "../Header/Staff.h"
+Staff::Staff():id(-1),name("none"){};
 Staff::Staff(int _staffCategory, int _id, std::string _name, int _turn): category(static_cast<StaffCategory>(_staffCategory)),id(_id),name(_name),numTurn(_turn)
 {}
 StaffCategory Staff::GetCategory()
