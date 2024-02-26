@@ -1,0 +1,17 @@
+[
+    {
+        "id": 1,
+        "name": "Cliente1",
+        "myOperations": [10, 20, 30, 40, -1]
+    },
+    {
+        "id": 2,
+        "name": "Cliente2",
+        "myOperations": [5, 15, 25, -1, -1]
+    },
+    {
+        "id": 3,
+        "name": "Cliente3",
+        "myOperations": [1, 2, 3, 4, -1]
+    }
+]
