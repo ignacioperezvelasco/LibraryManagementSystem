@@ -48,3 +48,33 @@ Book BookManager::GetBook(int _sn)
 {
     return mBooks[_sn];
 };
+
+void BookManager::SaveToJson(std::string _path)
+{
+        Json::Value root;  // Crear un objeto JSON
+// Recorrer el mapa de libros y agregar cada libro al objeto JSON
+    for (const auto& entry : mBooks) {
+        const Book& book = entry.second;
+
+        Json::Value bookJson;
+        bookJson["serialNumber"] = book.GetSN();
+        bookJson["available"] = book.GetIsAviable();
+        bookJson["title"] = book.GetTitle();
+        bookJson["author"] = book.GetAuthor();
+        bookJson["clientId"] = book.GetIdClient();
+
+        root["books"].append(bookJson);
+    }
+
+    // Abrir un archivo para escritura
+    std::ofstream outputFile(_path);
+    if (!outputFile.is_open()) {
+        std::cerr << "Error al abrir el archivo para escritura: " << filename << std::endl;
+        return;
+    }
+
+    // Escribir el objeto JSON en el archivo
+    outputFile << root;
+    std::cout << "Información de libros guardada en: " << filename << std::endl;
+
+}

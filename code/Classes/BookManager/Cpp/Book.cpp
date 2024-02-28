@@ -3,27 +3,27 @@ Book::Book(int _sn, bool _aviable, std::string _author, std::string _title,int _
 serialNumber(_sn),aviable(_aviable), author(_author),title(_title),idClient(_idClient)
 {};
 
-bool Book::GetIsAviable()
+bool Book::GetIsAviable() const
 {
     return aviable;
 };
 
-int Book::GetSN()
+int Book::GetSN() const
 {
     return serialNumber;
 };
 
-int Book::GetIdClient()
+int Book::GetIdClient()const
 {
     return idClient;
 }
 
-std::string Book::GetAuthor()
+std::string Book::GetAuthor()const
 {
     return author;
 }
 
-std::string Book::GetTitle()
+std::string Book::GetTitle()const
 {
     return title;
 }

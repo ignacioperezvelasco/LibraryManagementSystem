@@ -11,9 +11,9 @@
     public:
     Book(){};
     Book(int _sn, bool _aviable, std::string _author, std::string _title,int _idClient);
-    bool GetIsAviable();
-    int GetSN();
-    int GetIdClient();
-    std::string GetAuthor();
-    std::string GetTitle();
+    bool GetIsAviable() const;
+    int GetSN () const;
+    int GetIdClient()const;
+    std::string GetAuthor() const;
+    std::string GetTitle() const;
  };
